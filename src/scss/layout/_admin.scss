@@ -1,0 +1,35 @@
+
+.citas-admin{
+    margin: 3rem 0;
+}
+.lista-citas{
+    padding: 0 3rem;
+    list-style: none;
+}
+.citas{
+    margin-bottom: 4rem;
+    p{
+        span{
+            font-weight: bold;
+            color: rgb(68, 205, 255);
+        }
+    }
+    &::after{
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: white;
+    }
+}
+.servicios{
+    @extend .citas;
+}
+.servicios-lista{
+    @extend .lista-citas;
+}
+.total-precio-cita-admin{
+    text-align: right;
+    margin: 4rem 0;
+}
+
+

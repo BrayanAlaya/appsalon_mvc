@@ -1,0 +1,14 @@
+
+.alerta{
+    padding: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    &.error{
+        background-color: red;
+    }
+    &.exito{
+
+        background-color: green;
+    }
+}

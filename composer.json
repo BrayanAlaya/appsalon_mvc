@@ -1,0 +1,23 @@
+{
+    "name": "braya/app-salon",
+    "description": "proyecto de barberia",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MVC\\": "./",
+            "Controllers\\":"./controllers",
+            "Model\\":"./models",
+            "Classes\\": "./classes"
+        }
+    },                          
+    "authors": [
+        {
+            "name": "brayan anthony alaya atalaya",
+            "email": "brayan.alaya@hotmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

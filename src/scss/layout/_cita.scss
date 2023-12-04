@@ -1,0 +1,41 @@
+@use "base/mixins" as m;
+
+.seccion{
+
+    p{
+        text-align: center;
+    }
+    display: none;
+}
+
+.mostrar{
+    display: block;
+}
+
+.contenido-resumen{
+    width: 100%;
+    p{
+        text-align: left;
+        span{
+            font-weight: bold;
+        }
+    }
+}
+.servicioCita-resumen{
+    position: relative;
+    @include m.tablet{
+        display: flex;
+        justify-content: space-between;
+    }
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    &:after{
+        content: "";
+        position: absolute;
+        background-color: white;
+        bottom: 0.5rem;
+
+        height: 1px;
+        width: 100%;
+    }
+}

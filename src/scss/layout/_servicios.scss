@@ -1,0 +1,45 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.listado-servicios{
+
+    display: grid;
+    gap: 2rem;
+
+    @include m.tablet{
+        
+        @include m.grid(2, 2rem);
+    }
+
+    .mostrar-servicios{
+        background-color: white;
+        border-radius: 1rem;
+        padding: 1rem;
+        transition: 0.5s;
+
+        &.seleccionado{
+            p{
+                color: white;
+            }
+            background: darkblue;
+        }
+
+        &:hover{
+            transform: scale(105%);
+            p{
+                color: white;
+            }
+            background: darkblue;
+            cursor: pointer;
+        }
+
+        p{
+            color: v.$negro;
+        }
+        .precio-servicio{
+            color: darkblue;
+            font-weight: bold;
+            font-size: 3rem;
+        }
+    }
+}
